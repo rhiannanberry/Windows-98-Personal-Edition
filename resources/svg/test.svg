@@ -1,0 +1,16 @@
+<svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+
+	<rect width="40" height="40" fill="#C0C0C0"/>
+
+ 	<line stroke-linecap="butt"
+ x1="10" x2="10" y1="10" y2="20" stroke-width="1" stroke="#000000" />
+ <line stroke-linecap="butt"
+ x1="30" x2="30" y1="10" y2="20" stroke-width="1" stroke="#000000" />
+ <line stroke-linecap="butt"
+ x1="15" x2="16" y1="15" y2="15" stroke-width="1" stroke="#000000" />
+ <line stroke-linecap="butt"
+ x1="15" x2="16" y1="16" y2="16" stroke-width="1" stroke="#FFFFFF" />
+ <line stroke-linecap="butt"
+ x1="15" x2="16" y1="17" y2="17" stroke-width="1" stroke="#000000" />
+
+</svg>
