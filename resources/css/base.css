@@ -110,34 +110,40 @@ body {
   display: none; }
   .start-menu.open {
     display: block; }
-
-.title-outer {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 37px;
-  height: 100%;
-  background: linear-gradient(#000184 60%, #0f80cd); }
-
-.title {
-  vertical-align: top;
-  position: absolute;
-  transform: rotate(-90deg);
-  color: white;
-  top: 300px;
-  left: -72px;
-  font-size: 25px;
-  font-weight: bold; }
-
-.title > span {
-  font-weight: 100; }
-
-.start-menu > ul {
-  margin: 0;
-  padding: 0; }
-
-.start-menu > ul > li {
-  padding: 18px 100px 18px 100px;
-  list-style: none; }
+  .start-menu .title-outer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 37px;
+    height: 100%;
+    background: linear-gradient(#000184 60%, #0f80cd); }
+    .start-menu .title-outer .title {
+      vertical-align: top;
+      position: absolute;
+      transform: rotate(-90deg);
+      color: white;
+      bottom: 80px;
+      left: -70px;
+      font-size: 25px;
+      font-weight: bold; }
+      .start-menu .title-outer .title span {
+        font-weight: 100; }
+  .start-menu ul {
+    margin: 0;
+    padding: 0; }
+    .start-menu ul li {
+      padding: 18px 100px 18px 100px;
+      list-style: none;
+      background-repeat: no-repeat;
+      background-position: 48px center;
+      background-size: 33px;
+      image-rendering: pixelated;
+      background-image: url(../svg/me.svg); }
+      .start-menu ul li:hover {
+        background-color: #000184;
+        color: white;
+        cursor: pointer; }
+    .start-menu ul .messenger {
+      background-image: url(../svg/messenger.svg); }
 
 /*# sourceMappingURL=base.css.map */
