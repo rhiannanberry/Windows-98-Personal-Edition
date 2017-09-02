@@ -15,4 +15,7 @@ $(document).ready(function() {
 		document.execCommand('copy');
 		document.body.removeChild(txt);
 	});
+	//TODO: Make dragging work
+	
+	$('.window').draggable();
 });
