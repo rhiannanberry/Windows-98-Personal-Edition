@@ -6,8 +6,10 @@
 	<meta name="author" content="Rhiannan Berry" />
 	<meta name="description" content="Immensely cool." />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
+	<link rel="stylesheet" type="text/css" href="resources/css/normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="resources/css/jquery-ui.min.css"/>
 	<link rel="stylesheet" type="text/css" href="resources/css/base.css" media="screen, projection"/>
+
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 
 	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
@@ -23,7 +25,9 @@
 	  };
 	  firebase.initializeApp(config);
 	</script>
+	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 	<script type='text/javascript' src="resources/js/jquery.min.js"></script>
+		<script type='text/javascript' src="resources/js/jquery-ui.min.js"></script>
 	<script type='text/javascript' src="resources/js/base.js"></script>
 	<link rel="icon" type="image/x-icon" href="resources/icons/favi.ico">
 </head>
@@ -49,8 +53,8 @@
 				<li class="about">About Me</li>
 				<li class="projects">Projects</li>
 				<li class="messenger">Let's Chat</li>
-				<li class="temp">Porn</li>
-				<li class="temp">Porn.exe</li>
+				<li class="art">Art</li>
+				<li class="personalstatement">Personal Statement</li>
 			</ul>
 		</div>
 
@@ -63,17 +67,46 @@
 	<br/>
 	<div style="color: #008080">nobody is watching. what will you do?</div>
 	<div class="window-container">
-		<div class="window">
-			<div class="window-title">
-				About Me
-				<div class="button" id="close">X</div>
+		<div class="window about">
+			<div class="window-title">About Me<div class="button close" id="about">X</div>
 			</div>
 			<div class="window-body">
-				<!--Include low res pixel-y picture of urself-->
-				<p>Hi, I'm Rhiannan. I'm in my third year at Georgia Tech. I like making games and art. I appreciate math, science, technology, and art in equal measures. I hope we can be great friends.</p>
+				<img src="resources/icons/me.bmp" alt="" style="display: inline-block;">
+				<p style="display: inline-block; vertical-align: top; margin-left: 3px">Hi, I'm Rhiannan. I'm in my third year at Georgia Tech. I like </br>making games and interesting things. I appreciate math, </br>science, technology, and art in equal measures. I hope we </br>can be great friends.</p>
+			</div>
+		</div>
+		<div class="window projects">
+			<div class="window-title">Projects<div class="button close" id="projects">X</div>
+			</div>
+			<div class="window-body">
+				<img src="resources/icons/project.ico" alt="" style="display: inline-block;">
+				<p style="display: inline-block; vertical-align: top; margin-left: 3px">Coming Soon</p>
+			</div>
+		</div>
+		<div class="window messenger">
+			<div class="window-title">Let's Chat<div class="button close" id="messenger">X</div>
+			</div>
+			<div class="window-body">
+				<p style="display: inline-block; vertical-align: top; margin-left: 3px">Coming Soon</p>
+			</div>
+		</div>
+		<div class="window art" style="top: 25px">
+			<div class="window-title">Art<div class="button close" id="art">X</div></div>
+			<div class="window-body">
+				<p style="display: inline-block; vertical-align: top; margin-left: 3px">Coming Sooooooooooooooon</p>
+			</div>
+		</div>
+		<div class="window personalstatement">
+			<div class="window-title">
+				Personal Statement
+				<div class="button close" id="personalstatement">X</div>
+			</div>
+			<div class="window-body">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/v0lGQQjL-vc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>
+
 
 </body>
 </html>
