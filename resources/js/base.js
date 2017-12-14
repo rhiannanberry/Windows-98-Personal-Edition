@@ -1,5 +1,9 @@
 $(document).ready(function() {
 	var a=4;
+	$( "#dialog" ).dialog({
+	 	appendTo: "#wrow"
+	 });
+	$('#dialog').hide();
 	$('#start').on('click', function(e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
@@ -8,6 +12,8 @@ $(document).ready(function() {
 	$('li').on('click', function(e) {
 		$('.start-menu').toggleClass('open');
 		$('.'+this.classList).toggleClass('open');
+		$("#dialog").dialog('open');
+		$('#end-split').after('<div class="button" id="email">twojjjj</div>');
 	});
 	$('.button.close').on('click', function(e) {
 		$('.'+e.target.id).toggleClass('open');
@@ -17,6 +23,8 @@ $(document).ready(function() {
         $(this).siblings().removeClass('top').addClass('bottom');
         $(this).css("z-index", a++);
 	});
+
+
 
 //TODO: Create popup for successful copy and also add fail safes
 	$('#email').on('click', function(e) {

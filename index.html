@@ -27,7 +27,7 @@
 	</script>
 	<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
 	<script type='text/javascript' src="resources/js/jquery.min.js"></script>
-		<script type='text/javascript' src="resources/js/jquery-ui.min.js"></script>
+	<script type='text/javascript' src="resources/js/jquery-ui.min.js"></script>
 	<script type='text/javascript' src="resources/js/base.js"></script>
 	<link rel="icon" type="image/x-icon" href="resources/icons/favi.ico">
 </head>
@@ -40,17 +40,20 @@
 		<a href="http://github.com/rhiannanberry" class="icon" id="github"></a>
 		<a href="https://twitter.com/rowan_oaks" class="icon" id="twitter"></a>
 
-		<div class="split-line"></div>
+		<div class="split-line" id="end-split"></div>
 
 		
 		<div class="button" id="email">rberry36@gatech.edu</div>
-
+		<!--<div class="button" id="email">twojjjj</div>
+		<div class="button" id="email">twojjjj</div>
+		-->
 		<div class="start-menu">
 			<div class="title-outer">
 				<div class="title">Rhiannan<span>Berry</span></div>
 			</div>
 			<ul>
-				<li class="about">About Me</li>
+				<li class="about">About</li>
+				<li class="posts">Posts</li>
 				<li class="projects">Projects</li>
 				<li class="messenger">Let's Chat</li>
 				<li class="art">Art</li>
@@ -68,8 +71,15 @@
 	<div style="color: #008080">nobody is watching. what will you do?</div>
 	<div class="window-container">
 		<div class="window about">
-			<div class="window-title">About Me<div class="button close" id="about">X</div>
+			<div class="window-title">About<div class="button close" id="about">X</div></div>
+			<div class="window-body">
+				<img src="resources/icons/me.bmp" alt="" style="display: inline-block;">
+				<p style="display: inline-block; vertical-align: top; margin-left: 3px">Hi, I'm Rhiannan. I'm in my third year at Georgia Tech. I like </br>making games and interesting things. I appreciate math, </br>science, technology, and art in equal measures. I hope we </br>can be great friends.</p>
 			</div>
+		</div>
+		<div class="window posts">
+			<!-- FILL ME IN-->
+			<div class="window-title">About<div class="button close" id="posts">X</div></div>
 			<div class="window-body">
 				<img src="resources/icons/me.bmp" alt="" style="display: inline-block;">
 				<p style="display: inline-block; vertical-align: top; margin-left: 3px">Hi, I'm Rhiannan. I'm in my third year at Georgia Tech. I like </br>making games and interesting things. I appreciate math, </br>science, technology, and art in equal measures. I hope we </br>can be great friends.</p>
@@ -105,8 +115,15 @@
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/v0lGQQjL-vc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
+
 	</div>
 
+	<div class="thiiis" id="wrow">
+		<div class="dis" id="dialog" title="Basic dialog">
+			<p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+		</div>
+	</div>
+	
 
 </body>
 </html>

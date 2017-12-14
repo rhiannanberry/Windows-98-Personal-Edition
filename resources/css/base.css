@@ -12,6 +12,16 @@ body {
   position: relative;
   background-color: #008080; }
 
+.container2 {
+  margin:0;
+  position: relative;
+  overflow: auto;
+}
+
+#wrow {
+  position: fixed;
+}
+
 .header-line {
   box-sizing: border-box;
   padding: 3px;
