@@ -12,16 +12,6 @@ body {
   position: relative;
   background-color: #008080; }
 
-.container2 {
-  margin:0;
-  position: relative;
-  overflow: auto;
-}
-
-#wrow {
-  position: fixed;
-}
-
 .header-line {
   box-sizing: border-box;
   padding: 3px;
@@ -129,82 +119,68 @@ body {
   padding-top: 0px;
   font-size: 14px;
   visibility: hidden;
-  display: block; }
-  .start-menu.open {
-    visibility: visible; }
-  .start-menu .title-outer {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 37px;
-    height: 100%;
-    background: linear-gradient(#000184 60%, #0f80cd); }
-    .start-menu .title-outer .title {
-      vertical-align: top;
-      position: absolute;
-      transform: rotate(-90deg);
-      color: white;
-      bottom: 80px;
-      left: -70px;
-      font-size: 25px;
-      font-weight: bold; }
-      .start-menu .title-outer .title span {
-        font-weight: 100; }
-  .start-menu ul {
-    margin: 0;
-    padding: 0; }
-    .start-menu ul li {
-      padding: 18px 100px 18px 100px;
-      list-style: none;
-      background-repeat: no-repeat;
-      background-position: 48px center;
-      background-size: 33px;
-      image-rendering: pixelated;
-      background-image: url(../svg/me.svg); }
-      .start-menu ul li:hover {
-        background-color: #000184;
-        color: white;
-        cursor: pointer; }
-    .start-menu ul .messenger {
-      background-image: url(../svg/messenger.svg); }
-    .start-menu ul .projects {
-      background-image: url(../icons/project.ico); }
-    .start-menu ul .personalstatement {
-      background-image: url(../icons/personal.ico); }
+  display: block; 
+}
+.start-menu.open {
+  visibility: visible; 
+}
+.start-menu .title-outer {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 37px;
+  height: 100%;
+  background: linear-gradient(#000184 60%, #0f80cd); 
+}
+.start-menu .title-outer .title {
+  vertical-align: top;
+  position: absolute;
+  transform: rotate(-90deg);
+  color: white;
+  bottom: 80px;
+  left: -70px;
+  font-size: 25px;
+  font-weight: bold; 
+}
+
+.start-menu .title-outer .title span {
+  font-weight: 100; 
+}
+
+.start-menu ul {
+  margin: 0;
+  padding: 0; 
+}
+
+.start-menu ul li {
+  padding: 18px 100px 18px 100px;
+  list-style: none;
+  background-repeat: no-repeat;
+  background-position: 48px center;
+  background-size: 33px;
+  image-rendering: pixelated;
+  background-image: url(../svg/me.svg); 
+}
+.start-menu ul li:hover {
+  background-color: #000184;
+  color: white;
+  cursor: pointer; 
+}
+.start-menu ul .messenger {
+  background-image: url(../svg/messenger.svg); 
+}
+.start-menu ul .projects {
+  background-image: url(../icons/project.ico); 
+}
+.start-menu ul .personalstatement {
+  background-image: url(../icons/personal.ico); 
+}
 
 .window-container {
   text-align: center;
-  position: relative; }
+  position: relative; 
+}
 
-.window {
-  border-top: 2px solid white;
-  border-right: 2px solid #222;
-  border-bottom: 2px solid #222;
-  border-left: 2px solid white;
-  margin: 20px auto;
-  background: #C0C0C0;
-  position: relative;
-  top: 50px;
-  display: inline-block;
-  visibility: hidden; }
-  .window.open {
-    visibility: visible; }
-
-.window-title {
-  position: relative;
-  background: linear-gradient(90deg, #000184, #0f80cd);
-  padding: 4px 6px 5px;
-  color: white;
-  font-size: 15px;
-  margin-right: 2px;
-  text-align: left; }
-  .window-title:hover {
-    cursor: move; }
-
-.window-body {
-  padding: 18px 60px 20px 70px;
-  font-size: 14px;
-  text-align: left; }
 
 .button.close {
   font-size: 12px;
@@ -224,6 +200,7 @@ body {
   border-bottom: 2px solid #222;
   border-left: 2px solid white;
   line-height: 16px;
-  font-family: helvetica; }
+  font-family: helvetica; 
+}
 
 /*# sourceMappingURL=base.css.map */

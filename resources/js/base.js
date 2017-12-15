@@ -1,9 +1,32 @@
 $(document).ready(function() {
+	var wind = $('#test').window();
+	$('.about-window').window({
+		title: "About",
+		contents: $(abtPage)
+	});
+
+	$('.posts-window').window({
+		title: "Post"
+	});
+
+	$('.personalstatement-window').window({
+		title: "Personal Statement",
+		contents: $(persPage)
+	});
+
+	$('.messenger-window').window({
+		title: "Let's Chat"
+	});
+
+	$('.art-window').window({
+		title: "Art"
+	});
+
+	$('.projects-window').window({
+		title: "Projects"
+	});
+
 	var a=4;
-	$( "#dialog" ).dialog({
-	 	appendTo: "#wrow"
-	 });
-	$('#dialog').hide();
 	$('#start').on('click', function(e) {
 		e.preventDefault();
 		$(this).toggleClass('active');
@@ -11,9 +34,10 @@ $(document).ready(function() {
 	});
 	$('li').on('click', function(e) {
 		$('.start-menu').toggleClass('open');
-		$('.'+this.classList).toggleClass('open');
-		$("#dialog").dialog('open');
-		$('#end-split').after('<div class="button" id="email">twojjjj</div>');
+		console.log('.'+this.classList+'-window');
+		$('.'+this.classList+'-window').show();
+		//$('#end-split').after('<div class="button" id="email">'+this.classList+'</div>');
+		
 	});
 	$('.button.close').on('click', function(e) {
 		$('.'+e.target.id).toggleClass('open');
@@ -37,6 +61,21 @@ $(document).ready(function() {
 		document.body.removeChild(txt);
 	});
 
-	$('.window').draggable();
+	$('.window').draggable({
+		cancel: '.window-body'
+	});
 	$('.desktop-icon').draggable();
+
+	
+	//wind.draggable({handle: ".window-title2"});
 });
+
+
+var abtPage = 	'<img src="resources/icons/me.bmp" alt="" style="display: inline-block;">' +
+				'<p style="display: inline-block; vertical-align: top; margin-left: 3px">' +
+				"Hi, I'm Rhiannan. I'm in my third year at Georgia Tech. I like </br>" +
+				"making games and interesting things. I appreciate math, </br>" +
+				"science, technology, and art in equal measures. I hope we </br>" +
+				"can be great friends.</p>";
+var persPage = '<iframe width="560" height="315" src="https://www.youtube.com/embed/v0lGQQjL-vc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+
