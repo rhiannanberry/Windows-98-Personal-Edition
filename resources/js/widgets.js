@@ -1,7 +1,8 @@
 $.widget("custom.window", {
 	options: {
 		title: "Coming Soon TO OWN ON VHS",
-		contents: $('<div><img src="resources/icons/project.ico" alt="" style="display: inline-block;"><p style="display: inline-block; vertical-align: top; margin-left: 3px">Coming Soon</p></div>')
+		contents: $('<div><img src="resources/icons/project.ico" alt="" style="display: inline-block;"><p style="display: inline-block; vertical-align: top; margin-left: 3px">Coming Soon</p></div>'),
+		id: "about"
 					
 	},
 	_create: function() {
@@ -17,7 +18,8 @@ $.widget("custom.window", {
 		}).appendTo(this.title);
 
 		this.body = $("<div>", {
-			"class": "window-body"
+			"class": "window-body",
+			"id": this.options.id
 		}).appendTo(this.element);
 
 		//this._setDefaultContent();
@@ -54,7 +56,7 @@ $.widget("custom.window", {
 
 	title: function (value) {
 		if (value === undefined) {
-			return this.optsion.title;
+			return this.options.title;
 		}
 	}
 });
