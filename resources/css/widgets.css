@@ -49,3 +49,10 @@
   line-height: 16px;
   font-family: helvetica; 
 }
+
+.button.close:active {
+  border-top: 2px solid #222;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  border-left: 2px solid #222;
+}
