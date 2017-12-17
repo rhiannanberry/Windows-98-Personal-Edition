@@ -23,7 +23,8 @@ $(document).ready(function() {
 	});
 
 	$('.projects-window').window({
-		title: "Projects"
+		title: "Projects",
+		contents: $(innerWindow)
 	});
 
 	var a=4;
@@ -79,3 +80,4 @@ var abtPage = 	'<img src="resources/icons/me.bmp" alt="" style="display: inline-
 				"can be great friends.</p>";
 var persPage = '<iframe width="560" height="315" src="https://www.youtube.com/embed/v0lGQQjL-vc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
 
+var innerWindow = '<div class="contents-window"><p>hi mom</p></div><div class="button">YEET</div>';
