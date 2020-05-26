@@ -23,7 +23,9 @@ $(document).ready(function() {
 	});
 
 	$('.projects-window').window({
-		title: "Projects"
+		title: "Projects",
+		contents: $(innerWindow),
+		id: "projects"
 	});
 
 	var a=4;
@@ -68,6 +70,10 @@ $(document).ready(function() {
 
 	
 	//wind.draggable({handle: ".window-title2"});
+
+	$.get('resources/windows/projects.html', function(data) {
+		conole.log(data);
+	});
 });
 
 
@@ -79,3 +85,12 @@ var abtPage = 	'<img src="resources/icons/me.bmp" alt="" style="display: inline-
 				"can be great friends.</p>";
 var persPage = '<iframe width="560" height="315" src="https://www.youtube.com/embed/v0lGQQjL-vc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
 
+
+var projectContents= '<h1>2017</h1></br>'
+		+'<h3>snake-a-thon V2</h3><p>Revisiting a project I did last year in Gamemaker. This time, in Unity!</p>'
+		+'<h3>Rat Unity</h3><p>Made for a class. Mostly an early experiment in dialogue trees and unlit shaders.</p>'
+		+'<h3>snake-a-thon</h3><p>A fun spin on the classic game Snake. Created for a club I help run at Georgia Tech (VGDev), with the only rule being the game must be built in one semester.</p>'
+		+'<h1>2016</h1></br>'
+		+'<h3>Analog Dreams</h3><p>Another game made for VGDev. Co-lead with Sean Flanagan. Your standard 3D physics puzzler with portals, but with a twist!</p>'
+		+'<h3>Space Squids</h3><p>First ever game with VGDev <3. My only work on this was creating the titular squid model, and providing necessary emotional support.</p>';
+var innerWindow = '<div  class="contents-window">'+projectContents+'</div><div id= "projects" class="button">YEET</div>';
